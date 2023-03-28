@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&family=Sora:wght@200;300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+p {
+  font-size: 16px;
+  color: #000;
+  margin: 0px;
+}
+
+span {
+  display: block;
+}
+
+#hero-banner-desk {
+  background-image: url(./images/hero-desk-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 2000px;
+  height: 550px;
+}
+
+.btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #0094D9;
+  background: #FFF100;
+  border-radius: 2px;
+  padding: 20px 40px;
+}
+.btn img {
+  width: 17px;
+  height: 15px;
+}
+
+#contact-us {
+  background-image: url(./images/contact-us-desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 2000px;
+}
+#contact-us h2 {
+  color: #0094D9;
+}
+#contact-us p {
+  max-width: 285px;
+  padding-bottom: 20px;
+}
+#contact-us form {
+  padding: 60px 40px;
+}
+#contact-us label {
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0px;
+}
+#contact-us input {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+}
+#contact-us select {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px;
+}
+#contact-us .col-md-6 {
+  margin-bottom: 10px;
+}
+
+#plumbing {
+  background-image: url(./images/plumbing-desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#plumbing h2 {
+  color: #FFF100;
+}
+
+#whychoose {
+  background-image: url(./images/why-choose-desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 2000px;
+}
+#whychoose h2 {
+  color: #0094D9;
+}
+#whychoose img {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 766px) {
+  #whychoose .col-md-3 {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+  }
+}
+#about-finolex {
+  background-image: url(./images/abou-finolex-desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 2000px;
+  height: 600px;
+}
+#about-finolex h2 {
+  color: #FFF100;
+  padding-bottom: 20px;
+}
+#about-finolex p {
+  padding: 10px 0px;
+}
+#about-finolex a {
+  margin: 10px 0px;
+}
+
+@media (max-width: 665px) {
+  h2 {
+    text-align: left;
+  }
+  p {
+    text-align: justify;
+  }
+  .btn {
+    text-align: left;
+  }
+}
+#partner-with-us h2 {
+  color: #0094D9;
+}
+#partner-with-us .tab-subHeading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #58595b;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  display: none;
+  font-family: "Montserrat", sans-serif;
+}
+#partner-with-us .active-tab .tab-subHeading {
+  display: block;
+}
+
+.tab {
+  border-left: 3px solid grey;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.active-tab {
+  border-left: 3px solid #0094d9;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.active-tab h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0094d9;
+  margin-bottom: 0px;
+}
+
+.partner_image {
+  width: 446px;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  .partner-heading {
+    font-weight: 700;
+    color: #0094d9;
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .partner-subtext {
+    font-weight: 600;
+    color: #0094d9;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .partner-cta {
+    padding-bottom: 40px;
+  }
+  .tab-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a5a5a5;
+    margin-bottom: 0px;
+  }
+  .tab-subHeading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #58595b;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    display: none;
+  }
+  .tab {
+    border-left: 3px solid grey;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .active-tab {
+    border-left: 3px solid #0094d9;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  .active-tab h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: #0094d9;
+    margin-bottom: 0px;
+  }
+  .partner_image {
+    width: 100%;
+    height: 220px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+#faq-section h2 {
+  color: #0094D9;
+}
+#faq-section .faq {
+  border: 2px solid #0094D9;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question h6 {
+  color: #0094D9;
+  font-size: 18px;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden !important;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+i {
+  color: #0094D9 !important;
+  cursor: pointer;
+}
+
+.fas:active {
+  transform: rotate(-350deg) !important;
+}
+
+#testimonials {
+  background-color: #0094D9;
+}
+#testimonials .col-md-3 p {
+  font-size: 1px;
+}
+
+.overlay {
+  width: auto;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* product section */
+.product-bg {
+  background-image: url("./assets/product-bg.png");
+  max-width: 1440px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-tags {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: rgba(88, 89, 91, 0.3);
+  padding: 28px 12px 28px 12px;
+  cursor: pointer;
+  font-family: "Montserrat-600";
+}
+
+/* .product-tags.active {
+  background-color: #fff100;
+  border-radius: 4px;
+  color: #0094d9;
+} */
+button {
+  padding: 18px 40px 18px 40px;
+  background: #fff !important;
+  color: #0094d9;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: "Montserrat-600";
+}
+
+.product-description {
+  background-color: #dde7fc;
+  font-family: "Montserrat-600";
+}
+
+.nav-pills .nav-link.active {
+  background-color: #fff100 !important;
+  border-bottom: 0;
+  color: #12487B !important;
+}
+
+.nav-pills .benefits:focus {
+  /* background-color: #232212; */
+  color: #12487B !important;
+  border-bottom: 4px solid #fff100 !important;
+  transition: 0.5s ease-in-out;
+  /* transition: 1.5s ease; */
+}
+
+/* .pro-link:before. {
+  content: '';
+  position: absolute;
+  left: 16.5%;
+  top: 210%;
+  transform: translateX(-30%);
+  transform: translateY(10%);
+  border-bottom-left-radius: 9px;
+
+
+  border: 7px solid;
+  border-color: #fff100;
+} */
+#slider {
+  background-color: #0094D9;
+  padding: 65px 0;
+}
+
+.card {
+  border: none !important;
+}
+
+.content {
+  text-align: justify;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #82282A;
+}
+
+.content::before {
+  content: url("../images/qoute.png");
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+.info {
+  color: #832729;
+  font-size: 13px;
+  font-family: "Nunito Sans";
+}
+
+.content::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+}
+
+#slider h2 {
+  color: #FFF100;
+}
+
+.card {
+  background-color: #0094D9;
+}
+
+.swiper-button-next {
+  position: absolute;
+  left: 50px !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  /* top: var(--swiper-navigation-top-offset,50%); */
+  top: unset !important;
+  bottom: -5px;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.video-play {
+  background-color: #0094D9 !important;
+}
+
+/* .img-test{
+ display: inline-block;
+ margin-top: -120px;
+} */
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 70px 25px 70px 15px;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 16px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px !important;
+}
+
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 25px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  margin-left: -15px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 10px !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #FFF100;
+  border: 2px solid #FFF100;
+  padding: 8px 10px;
+  border-radius: 50% !important;
+}
+
+@media (min-width: 700px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+.accordion-item {
+  margin-top: 20px !important;
+}
+
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  color: black !important;
+  font-weight: 700 !important;
+}
+
+.faq {
+  /* border-bottom: 1px solid rgb(221, 214, 214); */
+  padding-bottom: 10px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden !important;
+  transition: 0.6s ease;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq.active i {
+  transform: rotate(-180deg);
+  color: #0094D9 !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+  color: #0094D9 !important;
+}
+
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  color: #0094D9 !important;
+  font-weight: 700 !important;
+}
+
+.far {
+  transition: transform 0.5s ease-in-out;
+  color: #0094D9 !important;
+}
+
+.far,
+.fa-chevron-down {
+  color: #0094D9 !important;
+}
+
+.accordion {
+  box-shadow: none !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+}
+
+.accordion-button {
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0px;
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+.accordion-button {
+  border: 1px solid #0094D9;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #2e4566;
+  background-color: white !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+@media (min-width: 600px) {
+  #mobile-view {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #product-desk {
+    display: none;
+  }
+  #hero-banner-desk {
+    background-image: url(./images/hero-mob-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 2000px;
+    height: 550px;
+  }
+  #plumbing {
+    background-image: url(./images/plumbing-m-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #plumbing h2 {
+    font-size: 30px;
+  }
+  #plumbing p {
+    font-size: 14px;
+  }
+  #about-finolex {
+    background-image: url(./images/about-mob-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 2000px;
+    height: 600px;
+  }
+}/*# sourceMappingURL=style.css.map */
